@@ -1,5 +1,6 @@
 (ns clojure-matrix-bench.core
-  (:use [clatrix.core :only [trace i]]))
+  (:refer-clojure :exclude [get set map-indexed map rand vector? + - * pp vector])
+  (:use [clatrix.core]))
  
 (defn- my-main []
   (let [n 3000
@@ -7,4 +8,4 @@
     (trace (* m (i m)))))
  
 (defn -main []
-  (print (time my-main)))
+  (print (time (my-main))))
