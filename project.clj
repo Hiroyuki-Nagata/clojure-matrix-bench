@@ -6,4 +6,5 @@
   :main clojure-matrix-bench.core
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [clatrix/clatrix "0.5.0"]
+                 [org.la4j/la4j "0.6.0"]
                  [org.ojalgo/ojalgo "42.0.0"]])
