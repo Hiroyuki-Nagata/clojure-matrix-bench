@@ -1,15 +1,17 @@
 (ns clojure-matrix-bench.ojalgo
-  (:import (org.ojalgo.matrix BigMatrix BasicMatrix)))
+  (:import (org.ojalgo.matrix BigMatrix)
+           (org.ojalgo.random Uniform)))
+
+(defn make-random-matrix ^BigMatrix [^Integer rows ^Integer cols]
+  (let [f (. BigMatrix FACTORY)]
+    (. f makeFilled rows cols (new Uniform 0 1))))
 
 (defn test-main []
   (let [n 3000
         f (. BigMatrix FACTORY)
-        b (. f getBuilder n n)
-        m (. b build)]
-    ;; (println (. m countColumns))
-    ;; (println (. m countRows))
-    ;; (println m)
-    ))
+        m (make-random-matrix n n)
+        t ^BigMatrix (. m multiply (. m invert))]
+    (. t getTrace)))
 
 (defn testing []
   (time (test-main)))

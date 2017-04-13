@@ -6,6 +6,6 @@
 (defn -main [& {:as args}]
   (println "start => clatrix 0.5.0")
   (clatrix/testing)
-  (println "start => ojalgo 42.0.0")
-  (ojalgo/testing)
+  ;;(println "start => ojalgo 42.0.0, this may take a while")
+  ;;(ojalgo/testing)
   )
