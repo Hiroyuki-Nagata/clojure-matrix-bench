@@ -1,6 +1,6 @@
 (defproject clojure-matrix-bench "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Comparing libraries for matrix computation"
+  :url "https://github.com/Hiroyuki-Nagata/clojure-matrix-bench"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :main clojure-matrix-bench.core
