@@ -11,7 +11,7 @@ $ lein check && lein run
 ## Explanation
 
 * English
-** [Trace (linear algebra)](https://en.wikipedia.org/wiki/Trace_(linear_algebra))
+    * [Trace (linear algebra)](https://en.wikipedia.org/wiki/Trace_(linear_algebra))
 
 ```
 1. "n" = 3000
@@ -25,13 +25,13 @@ $ lein check && lein run
 8.24e-01  6.66e-01  1.72e-01  .  8.44e-01  2.46e-01  9.58e-01
 7.85e-02  3.04e-01  1.32e-01  .  3.81e-01  3.31e-01  6.54e-01
 
-3. Create inverted matrix by some function
-4. Times original "m" with above inverted matrix
-5. Finally execute trace of that in order to compute sum of its diagonal elements
+3. Create an inverted matrix by some functions
+4. Times original "m" with the above inverted matrix
+5. Finally compute "trace" (sum of its diagonal elements) of that.
 ```
 
 * 日本語
-** [跡 （線型代数学）](https://ja.wikipedia.org/wiki/%E8%B7%A1_(%E7%B7%9A%E5%9E%8B%E4%BB%A3%E6%95%B0%E5%AD%A6))
+    * [跡 （線型代数学）](https://ja.wikipedia.org/wiki/%E8%B7%A1_(%E7%B7%9A%E5%9E%8B%E4%BB%A3%E6%95%B0%E5%AD%A6))
 
 ```
 1. "n" = 3000 とおく
@@ -47,7 +47,7 @@ $ lein check && lein run
 
 3. 適当な方法で逆行列を作成する
 4. 3.で作成した行列と"m"の積を求める
-5. 最後に出来上がった行列の跡を求めて終わり
+5. 最後に出来上がった行列の"跡"を求めて終わり
 ```
 
 ## License
